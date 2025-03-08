@@ -84,16 +84,13 @@ const courses = [
 ]
 
 
-const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav ul');
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
-});
-
-navMenu.addEventListener('click', (e) => {
-  if (e.target.tagName === 'A') {
-    navMenu.classList.remove('show');
-  }
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
 });
 
