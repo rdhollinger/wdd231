@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachael Hollinger - WDD231 - Web Frontend Development</title>
-    <meta name="descrtiption" content="This is WDD 231 - Web Frontend Development course assignment portal as developed by Rachael Hollinger.">
+    <meta name="descrtiption"
+        content="This is WDD 231 - Web Frontend Development course assignment portal as developed by Rachael Hollinger.">
     <meta name="author" content="Rachael Hollinger">
     <meta property="og:title" content="Home Page">
     <meta property="og:type" content="website">
-    <meta property="image" content="https://images.pexels.com/photos/22763672/pexels-photo-22763672/free-photo-of-perrine-memorial-bridge-in-idaho-in-the-usa.jpeg">
+    <meta property="image"
+        content="https://images.pexels.com/photos/22763672/pexels-photo-22763672/free-photo-of-perrine-memorial-bridge-in-idaho-in-the-usa.jpeg">
     <meta property="url" content="https://rdhollinger.github.io/wdd231/">
-    <link rel="stylesheet" href="styles/homePage.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital@0;1&family=Jura:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital@0;1&family=Jura:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/homePage.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <img src="images/self_100.jpg" alt="Picture of myself" width="200" height="200" loading="lazy">
-        <h1>Rachael Hollinger</h1>
-        <nav>
+    <header class="HomeHead">
+        <h1><img src="images/self_100.jpg" width="200" height="200" alt="Picture of myself" class="self"
+                loading="lazy"><span><b>Rachael Hollinger</b></span></h1>
+        <nav class="nav">
             <ul class="menu">
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="#">GitHub Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/rdhollinger/">LinkedIn</a></li>
             </ul>
+            <ul>
+                <button class="nav-toggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="card1">
+        <section class="course-work">
             <h2>Course Work</h2>
-            <ul>
+            <ul class="course-work">
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
         </section>
-        <section class="card2">
+        <section class="local-info">
             <h2>Twin Falls, Idaho, USA</h2>
-            <img src="images/twinFalls2025_100.jpg" alt="Twin Falls, Idaho" width="300" height="400" loading="lazy">
+            <img src="images/twinFallsBridge100.jpg" alt="Twin Falls, Idaho" width="300" height="400" loading="lazy">
+            <p>Perrine Bridge, Twin Falls ID</p>
         </section>
-        <section class="card3">
+        <section class="course-list">
             <h2>Web and Computer Programming Certificate</h2>
-            <ul>
-                <li>CSE110</li>
-                <li>WDD130</li>
-                <li>CSE111</li>
-                <li>CSE210</li>
-                <li>WDD131</li>
-                <li>WDD231</li>
+            <ul class="courseList">
             </ul>
         </section>
     </main>
@@ -60,4 +69,5 @@
         <p>Last Modification: <span id="lastModified"></span> </p>
     </footer>
 </body>
+
 </html>

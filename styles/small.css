@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #F6F7F8;
+    --secondary-color: #011627;
+    --accent-color-1: #FF3366;
+    --accent-color-2: #2EC4B6;
+    --accent-color-3: #20A4F3;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-toggle span {
+        background-color: var(--accent-color-3);
+    }
+}
